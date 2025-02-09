@@ -11,5 +11,10 @@
             <li><a href="" class="nav-link">Galaxies</a></li>
         </ul>
     </nav>
+    <?php
+    wp_nav_menu([
+        'theme-location' => 'primary-menu'
+    ])
+    ?>
 </header>
 
