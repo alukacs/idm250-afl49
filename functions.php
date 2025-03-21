@@ -1,5 +1,6 @@
 <?php
 
+add_post_type_support('page', 'excerpt');
 
 function theme_styles_and_scripts() {
     wp_enqueue_style(
@@ -25,13 +26,6 @@ function theme_styles_and_scripts() {
 
 add_action('wp_enqueue_scripts', 'theme_styles_and_scripts');
 
-/* fuction login-page-custom-logo() {
-    echo '<style>
-        body.login { background-color: #f3f3f3; }
-        .login h1 a { background-image: url(' . get_') !important; }
-} */
-
-
 function theme_setup()
 {
     add_theme_support('post-thumbnails');
@@ -43,4 +37,3 @@ function theme_setup()
 
 add_action('after_setup_theme', 'theme_setup');
 
-/* function for adding live customizing using variables, theme colors, etc. */
